@@ -34,16 +34,23 @@ You can use Linux "Cron Jobs" or on Windows use "Task Scheduler" to Automate the
 
 # Linux Cron Jobs Example:
 Access the crontab: crontab -e
+
 Set the PHP path and the Script Path in the below line and add it to the crontab. this will run the script every day at 10:00 AM
-  0 10 * * * [/path/to/php] [/Path/To/Script/]DailyMySqlBackps.php > /dev/null 2>&1
+
+0 10 * * * [/path/to/php] [/Path/To/Script/]DailyMySqlBackps.php > /dev/null 2>&1
 
 # Windows "Task Scheduler" Example:
 Open the windows Run dialog box: Windows key + R
-Type taskschd.msc and execute. in Action Menu click on Create Task. 
-1: Set the Name and location in General Tab.  
+
+Type taskschd.msc and execute. in Action Menu click on Create Task.
+
+1: Set the Name and location in General Tab. 
+
 2: in Triggers Tab click on the New Button, and under setting panel select Daily.
+
 3: in the Action Tab, Click on the New Button, set the Action Drop Box to "Start a program" and in the Program/scrip add the following line:
-  C:\Path\To\php.exe -f C:\Path\To\Script\DailyMySqlBackps.php
+
+C:\Path\To\php.exe -f C:\Path\To\Script\DailyMySqlBackps.php
 
 
 

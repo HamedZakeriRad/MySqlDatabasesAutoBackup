@@ -33,7 +33,7 @@ class backupMySQL {
     public $OptimizeDatabaseBeforeBackup = TRUE;
 
     /**
-     * Set Backup SQL File OS Mode. Default mode is Linux. Default mode doesn't work on Windows OS.
+     * Set the OS Mode. Default mode is Linux. Default mode doesn't work on Windows OS.
      * @param String Set this to "Linux" if the OS is Linux/UNIX Type, To use shell command for Creating Backups.
      * @param String Set this to "WindowsMode1" if the OS is Windows, To use it on Windows OS. WindowsMode1 Uses Shell(CMD) Command to Create Backup SQL Files, This mode is Highly Reliable.
      * @param String Set this to "WindowsMode2"if the OS is Windows, To use it on Windows OS. WindowsMode2 Uses Loop Through Tables to Create Backup SQL Files, This mode is not Reliable. Works best for light Weighted Database. 

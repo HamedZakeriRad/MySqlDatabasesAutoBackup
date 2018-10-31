@@ -48,7 +48,7 @@ Type taskschd.msc and execute. in Action Menu click on Create Task.
 
 2: in Triggers Tab click on the New Button, and under setting panel select Daily.
 
-3: in the Action Tab, Click on the New Button, set the Action Drop Box to "Start a program" and in the Program/scrip add the following line:
+3: in the Action Tab, Click on the New Button, set the Action Drop Box to "Start a program" and in the Program/scrip section add the following line (Set the PHP path and the Script Path):
 
 C:\Path\To\php.exe -f C:\Path\To\Script\DailyMySqlBackps.php
 

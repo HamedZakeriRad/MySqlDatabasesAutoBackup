@@ -16,7 +16,7 @@ $BackupMySQL = new backupMySQL();
  * For Windows use something like c:/
  */
 
-$BaseDirectory = "c:/";
+$BaseDirectory = "/var/";
 $WorkingDirectory = "";
 $Date = $MySQLConnection->getTodayDate();
 //------------------------Create Folders----------------------------------------
@@ -33,9 +33,9 @@ if (!file_exists($BaseDirectory . 'sql_backups')) {
     }
 }
 //------------------------SetUp Backup Class------------------------------------
-$BackupMySQL->CreateZipFile = TRUE;
+$BackupMySQL->CreateZipFile = FALSE;
 $BackupMySQL->OptimizeDatabaseBeforeBackup = TRUE;
-$BackupMySQL->SetModeOS = "WindowsMode1";
+$BackupMySQL->SetModeOS = "Linux";
 $BackupMySQL->WorkingDirectory = $WorkingDirectory;
 $BackupMySQL->SqlConnection = $MySQLConnection->Connection;
 //------------------------------------------------------------------------------
